@@ -1,0 +1,12 @@
+<% if current_user %>
+  <%= erb :'access/index' %>
+<% else %>
+  <img id='strong' src='/fitness_light.jpg'> 
+
+  <div class='homeText'>
+    <h2>Don't let the code break you. <strong>EVER AGAIN</strong></h2>
+  </div>
+<% end %>
+
+
+

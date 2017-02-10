@@ -1,0 +1,166 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin: 0px auto;
+  width: 900px;
+}
+
+header {
+  background-image: url('http://lotusvibes.org/wp-content/uploads/2014/08/Workshops.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-position: -150px;
+*/  overflow: hidden;
+  color: white;
+  height: 350px;
+  margin-bottom: 50px;
+}
+
+.text {
+  display: inline-block;
+  padding-top: 8%;
+  padding-left: 10%;
+  text-align: center;
+}
+
+.text h1 {
+  font-weight: normal;
+  font-size: 100px;
+  margin: 0px;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 1px 1px 15px #2e192a;
+}
+
+.text h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.text h1 a:hover {
+  color: #d3cee5;
+  transition: .2s ease-in-out;
+}
+
+.text p {
+  font-weight: normal;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 15px #2e192a;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 15px #2e192a;
+  display: inline-block;
+  font-weight: lighter;
+  font-size: 25px;
+  padding-right: 6%;
+  border-right: 1px solid white;
+  margin: 0px;
+}
+
+header nav a:last-child {
+  padding-left: 6%;
+  border: none;
+}
+
+header nav a:hover {
+  color: #d3cee5;
+  transition: .2s ease-in;
+  cursor: pointer;
+}
+
+/*------- body ------------*/
+.body {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.homeText {
+  border-top: 2px solid #bfbfbf;
+  border-bottom: 2px solid #bfbfbf;
+  padding: 10px 0px;
+}
+
+#strong {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: bold;
+  color: #554387;
+  font-size: 35px;
+}
+
+.stats {
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: lighter;
+  color: #554387;
+}
+
+.form {
+  text-align: left;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid #bfbfbf;
+  border-radius: 10px;
+  display: block;
+  padding: 20px 10px;
+  width: 300px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #554387;
+}
+
+input:focus {
+  border: 1px solid #9475ea;
+  outline: none;
+}
+
+.submit {
+  background-color: #9475ea;
+  color: white;
+  padding: 20px 0px;
+  margin: 0px;
+  width: 322px;
+}
+
+.submit.blue {
+  background-color: #14a076;
+}
+
+.submit.blue:hover {
+  background-color: #118965;
+}
+
+.submit:focus {
+  border: none;
+}
+
+.submit:hover {
+  background-color: #554387;
+  transition: .2s ease-in;
+}
+
+a.submit {
+  border-radius: 10px;
+  display: block;
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  margin: auto;
+}
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="/js/jquery.js"></script>
+  <script src="/js/application.js"></script>
+
+  <title></title>
+</head>
+<body>
+  <header>
+  <div class='container'>
+    <div class="text">
+      <h1><a href="/">StayFit</a></h1>
+      <% if current_user %>
+        <nav>
+          <a id='profile' href="/profile">Profile</a>
+          <a href="/users/logout">Logout</a>
+        </nav>
+      <% else %>
+        <nav>
+          <a id='register' href="/users/new">Register</a>
+          <a id='login' href="/users/login">Login</a>
+        </nav>
+      <% end %>
+    </div>
+  </div>
+</header>
+  <div class='body container'>
+    <%= yield %>
+  </div>
+</body>
+</html>

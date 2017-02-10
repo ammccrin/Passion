@@ -1,0 +1,11 @@
+<div class='form'>
+	<h1>Register</h1>
+	<% if @errors %>
+	  <%= erb :errors %>
+	<% end %>
+	<form id='form_register' action='/users/new' method='post'>
+	  <input type="text" name="username" placeholder="username"></input>
+	  <input type="password" name="password" placeholder="password"></input>
+	  <input class='submit' type="submit" value="Register">
+	</form>
+</div>

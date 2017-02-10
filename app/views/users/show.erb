@@ -1,0 +1,16 @@
+<h2><%= @user.username %>'s' Potlucks</h2><br>
+<% @potlucks.each do |potluck| %>
+<div class='event'>
+  <h3><%= potluck.name %></h3>
+  <p><%= potluck.starts_at %> at <%= potluck.location %></p>
+  <% if session[:user_id] == potluck.user.id %>
+    <form action='/potlucks/<%= potluck.id %>/edit' method='get'>
+      <input type="submit" value="Edit">
+    </form>
+    <form action='/potlucks/<%= potluck.id %>/delete' method='post'>
+      <input type='hidden' name='_method' value='DELETE'></input>
+      <input type="submit" value="Delete">
+    </form>
+  <% end %>
+</div>
+<% end %>
