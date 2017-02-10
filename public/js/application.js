@@ -37,7 +37,7 @@ $(document).ready(function() {
 
  //   $('body').on('submit', '#form_register', function(e){
 	// e.preventDefault()
-	
+
  //  	$.ajax({
  //  		url: $(e.target).attr('action'),
  //  		method: $(e.target).attr('method'),
@@ -65,7 +65,7 @@ $(document).ready(function() {
   	$.ajax({
   		url: $(e.target).attr('href')
   	}).done(function(response){
-  		$('#start').fadeOut()
+  		$('#start').hide()
   		$('.homeText').after(response)
   	})
   })

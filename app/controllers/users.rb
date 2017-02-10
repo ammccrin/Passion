@@ -43,7 +43,7 @@ end
 
 get '/users/:id' do
   require_user
-  
+
   @user = current_user
   @potlucks = @user.potlucks
   erb :'users/show'
@@ -60,6 +60,8 @@ get '/profile' do
 end
 
 get '/countdown' do
+  @workouts = Workout.all
+  @workout = @workouts.sample
 
   if request.xhr?
     erb :'access/count', layout: false

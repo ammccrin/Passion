@@ -1,5 +1,7 @@
 <br>
-<p>Start your workout at <%= workout_time %>... or now</p>
+<p>Do <%= @workout.workout %></p>
+<iframe width="420" height="315"
+  src="<%= @workout.url %>" frameborder='0' allowfullscreen>
+</iframe>
 
-<a id='start' class='submit blue' href="/countdown">Get Workout</a>
-	
+

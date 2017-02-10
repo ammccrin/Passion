@@ -1,4 +1,4 @@
-def workout_time 
+def workout_time
 	t = Time.now
 	hour = t.hour
 	min = t.min
@@ -11,11 +11,15 @@ def workout_time
 	if desired_time > 60
 		min = desired_time % 60
 		hour += 1
-	end 
+	end
 
 	if min < 10
 		new_min = "0#{min}"
+	else
+		new_min = "#{min}"
 	end
+
+
 
 	hour = "#{hour}"
 
@@ -23,6 +27,6 @@ def workout_time
 
 end
 
-# def desired_time 
+# def desired_time
 # 	Time.now + 10
 # end
