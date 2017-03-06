@@ -35,6 +35,8 @@ document.getElementById('go').addEventListener('click', function(){
 	  // If the count down is finished, write some text 
 	  if (countdown < 0) {
 	    clearInterval(timerId);
+	    var sound = new Audio('/airHorn.mp3');
+        sound.play();
 	    $('#start').fadeIn('slow')
 	    $('#timmer').hide()
 
