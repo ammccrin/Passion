@@ -4,5 +4,34 @@
   <h2>Hello <%= @user.username %>, click below to start!</h2>
 </div>
 <br><br>
+
+<p id="timmer"></p>
+
+<script>
+var countdown = 30 * 60 * 1000;
+var timerId = setInterval(function(){
+  countdown -= 1000;
+  var min = Math.floor(countdown / (60 * 1000));
+  //var sec = Math.floor(countdown - (min * 60 * 1000));  // wrong
+  var sec = Math.floor((countdown - (min * 60 * 1000)) / 1000);  //correct
+
+  // Display the result in the element with id="timmer"
+  if (min.toString().length < 2) {
+  	min = '0' + min
+  }
+
+  if (sec.toString().length < 2) {
+  	sec = '0' + sec
+  }
+  document.getElementById("timmer").innerHTML = min + "m " + sec + "s ";
+
+  // If the count down is finished, write some text 
+  if (countdown < 0) {
+    clearInterval(timerId);
+    document.getElementById("timmer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
 <a id='start' class='submit blue' href="/countdown">Get Workout</a>
 
