@@ -138,6 +138,13 @@ input:focus {
 .submit.blue {
   background-color: #14a076;
 }
+.submit.red {
+  background-color: #528DCF;
+}
+
+.submit.red:hover {
+  background-color: #1F5B9E;
+}
 
 .submit.blue:hover {
   background-color: #118965;
@@ -163,4 +170,9 @@ a.submit {
   margin: auto;
 }
 
+#timmer {
+  font-weight: bold;
+  color: #554387;
+  font-size: 35px;
+}
 

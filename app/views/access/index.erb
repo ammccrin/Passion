@@ -5,33 +5,45 @@
 </div>
 <br><br>
 
-<p id="timmer"></p>
+<p id="timmer" style='display: none'></p>
+
+<a id='go' class='submit red'>Start</a>
+
 
 <script>
-var countdown = 30 * 60 * 1000;
-var timerId = setInterval(function(){
-  countdown -= 1000;
-  var min = Math.floor(countdown / (60 * 1000));
-  //var sec = Math.floor(countdown - (min * 60 * 1000));  // wrong
-  var sec = Math.floor((countdown - (min * 60 * 1000)) / 1000);  //correct
+document.getElementById('go').addEventListener('click', function(){
+	$('#go').hide()
+	$('#timmer').fadeIn('slow')
 
-  // Display the result in the element with id="timmer"
-  if (min.toString().length < 2) {
-  	min = '0' + min
-  }
+	var countdown = 1 * 60 * 1000;
+	var timerId = setInterval(function(){
+	  countdown -= 1000;
+	  var min = Math.floor(countdown / (60 * 1000));
+	  //var sec = Math.floor(countdown - (min * 60 * 1000));  // wrong
+	  var sec = Math.floor((countdown - (min * 60 * 1000)) / 1000);  //correct
 
-  if (sec.toString().length < 2) {
-  	sec = '0' + sec
-  }
-  document.getElementById("timmer").innerHTML = min + "m " + sec + "s ";
+	  // Display the result in the element with id="timmer"
+	  if (min.toString().length < 2) {
+	  	min = '0' + min
+	  }
 
-  // If the count down is finished, write some text 
-  if (countdown < 0) {
-    clearInterval(timerId);
-    document.getElementById("timmer").innerHTML = "EXPIRED";
-  }
-}, 1000);
+	  if (sec.toString().length < 2) {
+	  	sec = '0' + sec
+	  }
+	  document.getElementById("timmer").innerHTML = min + "m " + sec + "s ";
+
+	  // If the count down is finished, write some text 
+	  if (countdown < 0) {
+	    clearInterval(timerId);
+	    $('#start').fadeIn('slow')
+	    $('#timmer').hide()
+
+
+	    // document.getElementById("start").show()
+	  }
+	}, 1000);
+})
 </script>
 
-<a id='start' class='submit blue' href="/countdown">Get Workout</a>
+<a id='start' style='display: none' class='submit blue' href="/countdown">Get Workout</a>
 
