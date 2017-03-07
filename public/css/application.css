@@ -15,7 +15,7 @@ header {
 */  overflow: hidden;
   color: white;
   height: 350px;
-  margin-bottom: 50px;
+  margin-bottom: 6%;
 }
 
 .text {
@@ -29,7 +29,7 @@ header {
   font-weight: normal;
   font-size: 100px;
   margin: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   color: white;
   text-shadow: 1px 1px 15px #2e192a;
 }
@@ -118,7 +118,7 @@ input {
   display: block;
   padding: 5% 2%;
   width: 96%;
-  margin-bottom: 10px;
+  margin-bottom: 2%;
   font-size: 20px;
   color: #554387;
 }
@@ -139,13 +139,6 @@ input:focus {
 .submit.blue {
   background-color: #14a076;
 }
-.submit.red {
-  background-color: #528DCF;
-}
-
-.submit.red:hover {
-  background-color: #1F5B9E;
-}
 
 .submit.blue:hover {
   background-color: #118965;
@@ -153,12 +146,12 @@ input:focus {
 
 .submit.purp {
   background-color: #9475ea;
-  margin-bottom: 20px;
 }
 
 .submit.purp:hover {
   background-color: #554387;
 }
+
 
 .submit:focus {
   border: none;
@@ -188,8 +181,8 @@ a.submit {
 }
 
 #workout {
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 7%;
+  margin-bottom: 7%;
 }
 
 #save_workout input{
@@ -197,12 +190,12 @@ a.submit {
   margin: auto;
   padding: 3% 1%;
   width: 32%;
-  margin-bottom: 20px;
+  margin-bottom: 2%;
 }
 
 #workout_list {
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 6%;
   margin-left: 3%;
 }
 
@@ -212,7 +205,6 @@ a.submit {
 @media (min-width: 1450px) {
   header {
     height: 400px;
-    margin-bottom: 60px;
   }
 
   .text {
@@ -221,7 +213,6 @@ a.submit {
 
   .text h1 {
     font-size: 120px;
-    margin-bottom: 20px;
   }
 
   header nav a {
@@ -231,14 +222,10 @@ a.submit {
 
   /*------- body ------------*/
   .homeText {
-    border-top: 2px solid #bfbfbf;
-    border-bottom: 2px solid #bfbfbf;
     padding: 12px 0px;
   }
 
   h1 {
-    font-weight: bold;
-    color: #554387;
     font-size: 45px;
   }
 
@@ -248,14 +235,11 @@ a.submit {
   }
 
   input {
-    margin-bottom: 10px;
     font-size: 30px;
-    color: #554387;
   }
 
   .submit {
     font-size: 30px;
-    margin: 0px;
   }
 
   a.submit {
@@ -286,7 +270,6 @@ a.submit {
 @media (min-width: 1800px) {
   header {
     height: 500px;
-    margin-bottom: 70px;
   }
 
   .text {
@@ -295,7 +278,6 @@ a.submit {
 
   .text h1 {
     font-size: 140px;
-    margin-bottom: 30px;
   }
 
   header nav a {
@@ -308,8 +290,6 @@ a.submit {
   }
 
   h1 {
-    font-weight: bold;
-    color: #554387;
     font-size: 55px;
   }
 
@@ -319,18 +299,15 @@ a.submit {
   }
 
   input {
-    margin-bottom: 10px;
     font-size: 37px;
-    color: #554387;
   }
 
   .submit {
     font-size: 37px;
-    margin: 0px;
   }
 
   a.submit {
-    border-radius: 15px;
+    border-radius: 16px;
     font-size: 37px;
   }
 
@@ -347,8 +324,69 @@ a.submit {
   }
 
   #save_workout input{
-    border-radius: 15px;
+    border-radius: 16px;
     font-size: 37px;
+  }
+
+}
+
+
+
+@media (min-width: 2100px) {
+  header {
+    height: 600px;
+  }
+
+  .text {
+    padding-top: 6%;
+  }
+
+  .text h1 {
+    font-size: 160px;
+  }
+
+  header nav a {
+    font-size: 42px;
+  }
+
+  /*------- body ------------*/
+  h1 {
+    font-size: 60px;
+  }
+
+
+  h2 {
+    font-size: 49px;
+  }
+
+  input {
+    font-size: 40px;
+  }
+
+  .submit {
+    font-size: 40px;
+  }
+
+  a.submit {
+    border-radius: 17px;
+    font-size: 40px;
+  }
+
+  #timmer {
+    font-size: 60px;
+  }
+
+  #workout {
+    height: 1100px;
+  }
+
+  #workout_list {
+    height: 1100px;
+  }
+
+  #save_workout input{
+    border-radius: 17px;
+    font-size: 40px;
   }
 
 }
