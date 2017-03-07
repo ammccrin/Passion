@@ -43,19 +43,18 @@ end
 
 get '/users/:id' do
   require_user
-
   @user = current_user
-  erb :'users/show'
-end
+  @workouts = current_user.workouts
 
-get '/profile' do
-  require_user
-  @user = current_user
   if request.xhr?
-    erb :'users/profile', layout: false
+    erb :'users/show', layout: false
   else
-    erb :'users/profile'
+    erb :'users/show'
   end
 end
 
-
+post '/workout/new' do
+  workout = Workout.find(params[:workout])
+  SavedWorkout.create(workout_id: workout.id, user_id: current_user.id)
+  redirect "users/#{current_user.id}"  
+end

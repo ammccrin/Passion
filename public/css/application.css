@@ -4,7 +4,7 @@ body {
 
 .container {
   margin: 0px auto;
-  width: 900px;
+  width: 80%;
 }
 
 header {
@@ -87,8 +87,8 @@ header nav a:hover {
 }
 
 #strong {
-  width: 150px;
-  margin-bottom: 20px;
+  width: 17%;
+  margin-bottom: 3%;
 }
 
 h1 {
@@ -109,14 +109,15 @@ h2 {
 .form {
   text-align: left;
   display: inline-block;
+  width: 50%;
 }
 
 input {
   border: 1px solid #bfbfbf;
   border-radius: 10px;
   display: block;
-  padding: 20px 10px;
-  width: 300px;
+  padding: 5% 2%;
+  width: 96%;
   margin-bottom: 10px;
   font-size: 20px;
   color: #554387;
@@ -130,9 +131,9 @@ input:focus {
 .submit {
   background-color: #9475ea;
   color: white;
-  padding: 20px 0px;
+  padding: 5% 2%;
   margin: 0px;
-  width: 322px;
+  width: 100%;
 }
 
 .submit.blue {
@@ -150,6 +151,15 @@ input:focus {
   background-color: #118965;
 }
 
+.submit.purp {
+  background-color: #9475ea;
+  margin-bottom: 20px;
+}
+
+.submit.purp:hover {
+  background-color: #554387;
+}
+
 .submit:focus {
   border: none;
 }
@@ -162,7 +172,8 @@ input:focus {
 a.submit {
   border-radius: 10px;
   display: block;
-  width: 300px;
+  padding: 3% 1%;
+  width: 30%;
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 20px;
@@ -177,12 +188,111 @@ a.submit {
 }
 
 #workout {
-  /*border: 5px solid #14a076;*/
   margin-top: 30px;
   margin-bottom: 50px;
 }
 
-#done {
-  background-color: #f10000;
+#save_workout input{
+  text-align: center;
+  margin: auto;
+  padding: 3% 1%;
+  width: 32%;
   margin-bottom: 20px;
+}
+
+#workout_list {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 3%;
+}
+
+
+
+/*-------- Media Queries -------------*/
+@media (min-width: 1450px) {
+  header {
+    height: 400px;
+    margin-bottom: 60px;
+  }
+
+  .text {
+    padding-top: 7%;
+/*    padding-left: 10%;
+*/  }
+
+  .text h1 {
+    font-size: 120px;
+    margin-bottom: 20px;
+  }
+
+/*  .text p {
+    font-size: 20px;
+  }*/
+
+  header nav a {
+    font-size: 35px;
+    padding-right: 6%;
+  }
+
+  /*------- body ------------*/
+  /*.body {
+    text-align: center;
+    padding-bottom: 70px;
+  }*/
+
+  .homeText {
+    border-top: 2px solid #bfbfbf;
+    border-bottom: 2px solid #bfbfbf;
+    padding: 10px 0px;
+  }
+
+  h1 {
+    font-weight: bold;
+    color: #554387;
+    font-size: 45px;
+  }
+
+
+  h2 {
+    font-size: 38px;
+  }
+
+  .form {
+    text-align: left;
+    display: inline-block;
+  }
+
+  input {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #554387;
+  }
+
+  .submit {
+    font-size: 30px;
+    margin: 0px;
+  }
+
+  a.submit {
+    border-radius: 15px;
+    font-size: 30px;
+  }
+
+  #timmer {
+    font-size: 45px;
+  }
+
+  #workout {
+    height: 800px;
+  }
+
+  #workout_list {
+    height: 800px;
+  }
+
+  #save_workout input{
+    border-radius: 15px;
+    font-size: 30px;
+  }
+
 }

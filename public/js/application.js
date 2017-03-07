@@ -70,11 +70,12 @@ $(document).ready(function() {
 
    $('#start').click(function(e){
     e.preventDefault()
+      $('#start').hide()
+    
     $.ajax({
       url: $(e.target).attr('href')
     }).done(function(response){
       $('.homeText h2').text('Here is your workout!')
-      $('#start').hide()
       $('.homeText').after(response)
     })
   })

@@ -9,6 +9,7 @@ get '/countdown' do
   @workout = @workouts.sample
   # Save this workout as the users workout
 
+
   if request.xhr?
     erb :'access/count', layout: false
   else
