@@ -216,18 +216,13 @@ a.submit {
   }
 
   .text {
-    padding-top: 7%;
-/*    padding-left: 10%;
-*/  }
+    padding-top: 6%;
+  }
 
   .text h1 {
     font-size: 120px;
     margin-bottom: 20px;
   }
-
-/*  .text p {
-    font-size: 20px;
-  }*/
 
   header nav a {
     font-size: 35px;
@@ -235,15 +230,10 @@ a.submit {
   }
 
   /*------- body ------------*/
-  /*.body {
-    text-align: center;
-    padding-bottom: 70px;
-  }*/
-
   .homeText {
     border-top: 2px solid #bfbfbf;
     border-bottom: 2px solid #bfbfbf;
-    padding: 10px 0px;
+    padding: 12px 0px;
   }
 
   h1 {
@@ -254,12 +244,7 @@ a.submit {
 
 
   h2 {
-    font-size: 38px;
-  }
-
-  .form {
-    text-align: left;
-    display: inline-block;
+    font-size: 35px;
   }
 
   input {
@@ -293,6 +278,77 @@ a.submit {
   #save_workout input{
     border-radius: 15px;
     font-size: 30px;
+  }
+
+}
+
+
+@media (min-width: 1800px) {
+  header {
+    height: 500px;
+    margin-bottom: 70px;
+  }
+
+  .text {
+    padding-top: 5%;
+  }
+
+  .text h1 {
+    font-size: 140px;
+    margin-bottom: 30px;
+  }
+
+  header nav a {
+    font-size: 42px;
+  }
+
+  /*------- body ------------*/
+  .homeText {
+    padding: 13px 0px;
+  }
+
+  h1 {
+    font-weight: bold;
+    color: #554387;
+    font-size: 55px;
+  }
+
+
+  h2 {
+    font-size: 44px;
+  }
+
+  input {
+    margin-bottom: 10px;
+    font-size: 37px;
+    color: #554387;
+  }
+
+  .submit {
+    font-size: 37px;
+    margin: 0px;
+  }
+
+  a.submit {
+    border-radius: 15px;
+    font-size: 37px;
+  }
+
+  #timmer {
+    font-size: 55px;
+  }
+
+  #workout {
+    height: 900px;
+  }
+
+  #workout_list {
+    height: 900px;
+  }
+
+  #save_workout input{
+    border-radius: 15px;
+    font-size: 37px;
   }
 
 }
