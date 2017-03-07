@@ -1,7 +1,10 @@
 <br>
-<p>Do <%= @workout.workout %></p>
-<iframe width="420" height="315"
-  src="<%= @workout.url %>" frameborder='0' allowfullscreen>
+
+<iframe id='workout' width="500" height="600"
+  src=<%= erb :workout %> allowfullscreen>
 </iframe>
 
+
+<a id='done' class='submit red' href='/access'>Done</a>
+<a id='another' class='submit blue' href='/workout'>Another Workout</a>
 

@@ -176,3 +176,13 @@ a.submit {
   font-size: 35px;
 }
 
+#workout {
+  /*border: 5px solid #14a076;*/
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#done {
+  background-color: #f10000;
+  margin-bottom: 20px;
+}

@@ -45,7 +45,6 @@ get '/users/:id' do
   require_user
 
   @user = current_user
-  @potlucks = @user.potlucks
   erb :'users/show'
 end
 
@@ -59,13 +58,4 @@ get '/profile' do
   end
 end
 
-get '/countdown' do
-  @workouts = Workout.all
-  @workout = @workouts.sample
 
-  if request.xhr?
-    erb :'access/count', layout: false
-  else
-    erb :'access/count'
-  end
-end

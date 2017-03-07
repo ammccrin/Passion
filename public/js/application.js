@@ -56,17 +56,27 @@ $(document).ready(function() {
   		url: $(e.target).attr('href')
   	}).done(function(response){
   		$('.body').html(response)
-  	})
+    })
   })
 
+   $('.container').on('click', '#another', function(e){
+    e.preventDefault()
+    $.ajax({
+      url: $(e.target).attr('href')
+    }).done(function(response){
+      $('#workout').attr('src', response)
+    })
+  })
 
    $('#start').click(function(e){
-  	e.preventDefault()
-  	$.ajax({
-  		url: $(e.target).attr('href')
-  	}).done(function(response){
-  		$('#start').hide()
-  		$('.homeText').after(response)
-  	})
+    e.preventDefault()
+    $.ajax({
+      url: $(e.target).attr('href')
+    }).done(function(response){
+      $('.homeText h2').text('Here is your workout!')
+      $('#start').hide()
+      $('.homeText').after(response)
+    })
   })
+
 });
