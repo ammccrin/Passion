@@ -64,7 +64,7 @@ $(document).ready(function() {
     $.ajax({
       url: $(e.target).attr('href')
     }).done(function(response){
-      $('#workout').attr('src', response)
+      $('.workout').attr('src', response)
     })
   })
 
@@ -98,6 +98,14 @@ $(document).ready(function() {
     $('#lightbox').fadeOut()
     $(e.target).removeClass('workout_show')
     $(e.target).addClass('workout_list')
+  })
+
+   $('.container').on('click', '#lightbox', function(e){
+    e.preventDefault()
+
+    $('#lightbox').fadeOut()
+    $('.workout_show').addClass('workout_list')
+    $('.workout_list').removeClass('workout_show')
   })
 
 });

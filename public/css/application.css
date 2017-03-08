@@ -181,7 +181,7 @@ a.submit {
   font-size: 35px;
 }
 
-#workout {
+.workout {
   margin-top: 7%;
   margin-bottom: 4%;
   width: 70%;
@@ -202,13 +202,13 @@ a.submit {
 }
 
 .workout_show {
-  height: 100%;
-  position: absolute;
+  height: 95%;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   right: 0;
-  margin: 5% auto;
+  margin: 2% auto;
 }
 
 #lightbox {
