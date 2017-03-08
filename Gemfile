@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 # PostgreSQL driver
-gem 'pg'
+group :production do
+  gem 'pg'
+end
 
 # Sinatra driver
 gem 'sinatra', '~>1.4'
@@ -16,6 +18,8 @@ gem 'rack', '1.5.2'
 gem 'shotgun'
 gem 'pry'
 gem 'bcrypt'
+source "https://rubygems.org"
+
 
 group :test do
   gem 'shoulda-matchers'

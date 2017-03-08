@@ -26,6 +26,7 @@ require 'erb'
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
 APP_NAME = APP_ROOT.basename.to_s
+require 'pry' if development?
 
 configure do
   # By default, Sinatra assumes that the root is the file that calls the configure block.
