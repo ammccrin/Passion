@@ -1,9 +1,9 @@
 <h1>Hello <%= @user.username %>, here are your workouts.</h1>
 <br>
 <% @workouts.each do |workout| %>
-	<iframe id='workout_list' width="45%" height="500"
-	  src=<%= workout.url %> allowfullscreen>
-	</iframe>
+	<img class='workout_list' src=<%= workout.url %>>
+	</img>
 <% end %>
 
 
+<div id="lightbox"></div>

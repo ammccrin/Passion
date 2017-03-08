@@ -14,6 +14,8 @@
 document.getElementById('go').addEventListener('click', function(){
 	$('#go').hide()
 	$('#timmer').fadeIn('slow')
+	$('.homeText h2').text('Your time has begun!')
+
 
 	var countdown = 1 * 60 * 1000;
 	var timerId = setInterval(function(){

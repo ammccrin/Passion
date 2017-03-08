@@ -1,18 +1,18 @@
 Workout.delete_all
 
-Workout.create(url:'http://darebee.com/workouts/super-burpee-workout.html')
-Workout.create(url:'http://darebee.com/workouts/boogeyman-workout.html')
-Workout.create(url:'http://darebee.com/workouts/hellfire-workout.html')
-Workout.create(url:'http://darebee.com/workouts/astronaut-workout.html')
-Workout.create(url:'http://darebee.com/workouts/bouncer-workout.html')
-Workout.create(url:'http://darebee.com/workouts/protect-and-serve-workout.html')
-Workout.create(url:'http://darebee.com/workouts/carpe-diem-workout.html')
-Workout.create(url:'http://darebee.com/workouts/apollo-workout.html')
-Workout.create(url:'http://darebee.com/workouts/mars-workout.html')
-Workout.create(url:'http://darebee.com/workouts/power-shed-workout.html')
-Workout.create(url:'http://darebee.com/workouts/gladiolus-workout.html')
-Workout.create(url:'http://darebee.com/workouts/zeus-workout.html')
-Workout.create(url:'http://darebee.com/workouts/prowler-workout.html')
+Workout.create(url:'/workouts/special-forces-workout-intro.jpg')
+Workout.create(url:'/workouts/man-down-workout-intro.jpg')
+Workout.create(url:'/workouts/gainer-workout.jpg')
+Workout.create(url:'/workouts/executioner-workout.jpg')
+Workout.create(url:'/workouts/dragon-knight-workout.jpg')
+Workout.create(url:'/workouts/core-fusion-workout-intro.jpg')
+Workout.create(url:'/workouts/commander-workout-intro.jpg')
+Workout.create(url:'/workouts/colossus-workout-intro.jpg')
+Workout.create(url:'/workouts/brute-legday-workout-intro.jpg')
+Workout.create(url:'/workouts/body-hack-workout-intro.jpg')
+Workout.create(url:'/workouts/chest-and-back-workout-intro.jpg')
+Workout.create(url:'/workouts/apex-predator-workout-intro.jpg')
+Workout.create(url:'/workouts/alter_ego.jpg')
 
 
 

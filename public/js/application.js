@@ -80,4 +80,24 @@ $(document).ready(function() {
     })
   })
 
+
+
+
+   $('.container').on('click', '.workout_list', function(e){
+    e.preventDefault()
+
+    $('#lightbox').fadeIn()
+    $(e.target).removeClass('workout_list')
+    $(e.target).addClass('workout_show')
+  })
+
+
+   $('.container').on('click', '.workout_show', function(e){
+    e.preventDefault()
+
+    $('#lightbox').fadeOut()
+    $(e.target).removeClass('workout_show')
+    $(e.target).addClass('workout_list')
+  })
+
 });

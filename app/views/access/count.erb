@@ -1,8 +1,7 @@
 <br>
 
-<iframe id='workout' width="50%" height="600"
-  src=<%= erb :workout %> allowfullscreen>
-</iframe>
+<img class='workout' src=<%= erb :workout %>>
+</img>
 
 <form id='save_workout' action="/workout/new" method="post">
 	<input type="hidden" name="workout" value=<%= @workout.id %>>
