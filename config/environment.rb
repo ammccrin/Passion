@@ -40,19 +40,6 @@ configure do
   set :views, File.join(Sinatra::Application.root, "app", "views")
 end
 
-configure :production, :development do
-	db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
-
-	ActiveRecord::Base.establish_connection(
-			:adapter => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
-			:host     => db.host,
-			:username => db.user,
-			:password => db.password,
-			:database => db.path[1..-1],
-			:encoding => 'utf8'
-	)
-end
-
 # Set up the controllers and helpers
 Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }
 Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
