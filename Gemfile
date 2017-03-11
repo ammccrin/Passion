@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
 # PostgreSQL driver
-
 group :production do
- gem 'pg'
+  gem 'pg'
 end
 
 # Sinatra driver
