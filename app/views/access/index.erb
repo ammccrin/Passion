@@ -17,9 +17,9 @@ document.getElementById('go').addEventListener('click', function(){
 	$('.homeText h2').text('Your time has begun!')
 
 
-	var countdown = 1 * 60 * 1000;
+	var countdown = 30 * 60 * 1000;
 	var timerId = setInterval(function(){
-	  countdown -= 10000;
+	  countdown -= 1000;
 	  var min = Math.floor(countdown / (60 * 1000));
 	  //var sec = Math.floor(countdown - (min * 60 * 1000));  // wrong
 	  var sec = Math.floor((countdown - (min * 60 * 1000)) / 1000);  //correct
