@@ -18,7 +18,6 @@ gem 'rack', '1.5.2'
 gem 'shotgun'
 gem 'pry'
 gem 'bcrypt'
-source "https://rubygems.org"
 
 
 group :test do

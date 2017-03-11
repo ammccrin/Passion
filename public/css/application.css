@@ -202,8 +202,8 @@ a.submit {
 }
 
 .workout_show {
-  height: 95%;
-  position: fixed;
+  width: 95%;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;

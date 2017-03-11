@@ -30,14 +30,6 @@ DB_NAME = db.path[1..-1]
 #   Sinatra::Application.environment is set to the value of ENV['RACK_ENV']
 #   if ENV['RACK_ENV'] is set.  If ENV['RACK_ENV'] is not set, it defaults
 #   to :development
-if development?
-  set :database, {
-    adapter: "sqlite3",
-    database: "db/db.sqlite3"
-  }
-else
-  set :database, ENV['DATABASE_URL']
-end
 
 
 ActiveRecord::Base.establish_connection(
