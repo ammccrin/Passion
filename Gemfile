@@ -1,9 +1,21 @@
 source 'https://rubygems.org'
 
 # PostgreSQL driver
-group :production do
-  gem 'pg'
+ruby "2.1.5"
+
+gem "sinatra-activerecord"
+gem 'sinatra-flash'
+gem 'sinatra-redirect-with-flash'
+
+group :development do
+ gem 'sqlite3'
+ gem "tux"
 end
+
+group :production do
+ gem 'pg'
+end
+
 
 # Sinatra driver
 gem 'sinatra', '~>1.4'
