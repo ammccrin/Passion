@@ -27,3 +27,7 @@ get '/workout' do
   end
 end
 
+
+post '/time' do
+  params[:time]
+end

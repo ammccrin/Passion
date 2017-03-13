@@ -9,12 +9,36 @@
 
 <a id='go' class='submit red'>Start</a>
 
+<form id='time_change' action='/time' method='post'>
+	  <input type="text" name="time" placeholder="countdown"></input>
+	  <input class='submit' type="submit" value="Change">
+</form>
+
 
 <script>
+time = 30
+
+$('#time_change').submit(function(e){
+	e.preventDefault()
+
+	$.ajax({
+		url: $(e.target).attr('action'),
+		method: $(e.target).attr('method'),
+		data: $(e.target).serialize()
+	}).done(function(response){
+		 time = response
+	})
+})
+
+
+
 document.getElementById('go').addEventListener('click', function(){
 	$('#go').hide()
 	$('#timmer').fadeIn('slow')
 	$('.homeText h2').text('Your time has begun!')
+
+console.log(time)
+
 
 
 	var countdown = 30 * 60 * 1000;
