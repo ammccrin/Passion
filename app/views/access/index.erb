@@ -9,14 +9,12 @@
 
 <a id='go' class='submit red'>Start</a>
 
-<form id='time_change' action='/time' method='post'>
-	  <input type="text" name="time" placeholder="countdown"></input>
-	  <input class='submit' type="submit" value="Change">
-</form>
 
+<!-- Tag to hold the users time input -->
+<p id='time'><%=  %></p>
 
 <script>
-time = 30
+// time = $('#time').html()
 
 $('#time_change').submit(function(e){
 	e.preventDefault()
@@ -26,7 +24,7 @@ $('#time_change').submit(function(e){
 		method: $(e.target).attr('method'),
 		data: $(e.target).serialize()
 	}).done(function(response){
-		 time = response
+		 // time = response
 	})
 })
 
@@ -36,10 +34,6 @@ document.getElementById('go').addEventListener('click', function(){
 	$('#go').hide()
 	$('#timmer').fadeIn('slow')
 	$('.homeText h2').text('Your time has begun!')
-
-console.log(time)
-
-
 
 	var countdown = 30 * 60 * 1000;
 	var timerId = setInterval(function(){

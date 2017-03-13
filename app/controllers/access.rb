@@ -29,5 +29,12 @@ end
 
 
 post '/time' do
-  params[:time]
+  time = params[:time]
+  t = time.to_i
+
+  if request.xhr?
+    t.to_json
+  else
+    erb :'access/index', locals: {time: t}
+  end
 end
