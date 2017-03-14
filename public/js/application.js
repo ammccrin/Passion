@@ -64,7 +64,7 @@ $(document).ready(function() {
     $.ajax({
       url: $(e.target).attr('href')
     }).done(function(response){
-      $('.workout').attr('src', response)
+      $('.body').html(response)
     })
   })
 
@@ -138,7 +138,7 @@ $(document).ready(function() {
 
       var countdown = time * 60 * 1000;
       var timerId = setInterval(function(){
-        countdown -= 1000;
+        countdown -= 10000;
         var min = Math.floor(countdown / (60 * 1000));
         //var sec = Math.floor(countdown - (min * 60 * 1000));  // wrong
         var sec = Math.floor((countdown - (min * 60 * 1000)) / 1000);  //correct

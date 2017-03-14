@@ -210,8 +210,9 @@ a.submit {
 }
 
 .workout_show {
-  width: auto;
-  max-height: 500px;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
   position: fixed;
   z-index: 1;
   top: 0;

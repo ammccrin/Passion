@@ -21,7 +21,7 @@ get '/workout' do
   # Save this workout as the users workout
 
   if request.xhr?
-    erb :'workout', layout: false
+    erb :'access/count', layout: false
   else
     erb :'access/count'
   end
