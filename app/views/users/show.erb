@@ -1,5 +1,17 @@
-<h1>Hello <%= @user.username %>, here are your workouts.</h1>
+<h1>Hello <%= @user.username %>, welcome to your profile.</h1>
 <br>
+<div class='homeText'>
+  <h2>Your countdown is <%= @user.time %>min.</h2>
+</div>
+<form id='time_change' action='/time' method='post'>
+	  <input type="text" name="time" placeholder="min."></input>
+	  <input class='submit' type="submit" value="Change">
+</form>
+<br><br>
+
+<div class='homeText'>
+  <h2>Here are your workouts</h2>
+</div>
 <% @workouts.each do |workout| %>
 	<img class='workout_list' src=<%= workout.url %>>
 	</img>
