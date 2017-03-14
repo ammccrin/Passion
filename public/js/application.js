@@ -153,6 +153,10 @@ $(document).ready(function() {
         }
         document.getElementById("timmer").innerHTML = min + "m " + sec + "s ";
 
+        $('#profile').click(function(e){
+          clearInterval(timerId);
+        })
+
         // If the count down is finished, write some text 
         if (countdown < 0) {
           clearInterval(timerId);
