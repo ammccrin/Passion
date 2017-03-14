@@ -145,6 +145,14 @@ input:focus {
   background-color: #118965;
 }
 
+.submit.red {
+  background-color: #f10000;
+}
+
+.submit.red:hover {
+  background-color: #b10000;
+}
+
 .submit.purp {
   background-color: #9475ea;
 }
@@ -223,6 +231,33 @@ a.submit {
     display: none;
 }
 
+#time_change {
+  margin-top: 4%;
+  margin-bottom: 9%;
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  scale: .7;
+  transform: scale(0.9);
+}
+
+#time_change input {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+
+#time_change .submit {
+  width: 45%;
+}
+
+#time {
+  /*display: none;*/
+}
+
+#done {
+  margin-top: 2%;
+}
 
 /*-------- Media Queries -------------*/
 

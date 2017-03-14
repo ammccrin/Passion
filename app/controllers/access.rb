@@ -27,14 +27,27 @@ get '/workout' do
   end
 end
 
-
 post '/time' do
-  time = params[:time]
-  t = time.to_i
+  @user = current_user
+
+  if params[:time].to_i > 0
+    @user.update_attribute('time', params[:time])
+  end
 
   if request.xhr?
-    t.to_json
+    erb :'access/index', layout: false
   else
-    erb :'access/index', locals: {time: t}
+    erb :'access/index'
+  end
+end
+
+
+get '/time' do 
+  @user = current_user
+  @workouts = Workout.all
+  @workout = @workouts.sample
+
+  if request.xhr?
+    @user.time.to_json
   end
 end
