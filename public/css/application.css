@@ -624,14 +624,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 
     a.submit {
-      padding: 3% 1%;
+      padding: 4% 1%;
       width: 40%;
       font-size: 40px;
     }
 
     input#save {
-      width: 40%;
-      padding: 3% 1%;
+      width: 42%;
       font-size: 40px;
     }
 
@@ -671,7 +670,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .submit {
       background-color: #9475ea;
       color: white;
-      padding: 5% 2%;
+      padding: 6% 2%;
       margin: 0px;
       width: 100%;
     }
