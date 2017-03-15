@@ -210,9 +210,8 @@ a.submit {
 }
 
 .workout_show {
-  max-width: 100%;
-  height: auto;
-  width: auto\9; /* ie8 */
+  width: auto;
+  max-height: 600px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -261,9 +260,10 @@ a.submit {
   margin-top: 2%;
 }
 
+
+
+
 /*-------- Media Queries -------------*/
-
-
 
 
 
@@ -543,5 +543,104 @@ a.submit {
     border-radius: 17px;
     font-size: 40px;
   }
+}
+
+
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+
+    header {
+      background-position: -900px;
+      height: 600px;
+    }
+
+    .text {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding-top: 8%;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .text h1 {
+      font-size: 100px;
+      margin-bottom: 40px;
+    }
+
+    header nav {
+      text-align: center;
+    }
+
+    header nav a {
+      display: block;
+      border: none;
+      width: 300px;
+      border: 2px solid white;
+      background-color:rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 2% 0;
+      margin: auto;
+      text-shadow: none;
+    }
+
+    header nav a:last-child {
+      margin-top: 30px;
+      padding-left: 0;
+      border: 2px solid white;
+    }
+
+    .text h1 a:hover {
+      color: #d3cee5;
+      transition: .2s ease-in-out;
+    }
+
+
+    .homeText {
+      border-top: 2px solid #bfbfbf;
+      border-bottom: 2px solid #bfbfbf;
+      padding: 15px 0px;
+      margin-bottom: 1%;
+    }
+
+    #strong {
+      width: 25%;
+      margin-bottom: 7%;
+    }
+
+    h1 {
+      font-weight: bold;
+      color: #554387;
+      font-size: 35px;
+    }
+
+    h2 {
+      font-size: 27px;
+    }
+
+    a.submit {
+      padding: 3% 1%;
+      width: 30%;
+      font-size: 25px;
+    }
+
+    .workout_show {
+      width: 400px;
+      height: 540px;
+      width: auto\9; /* ie8 */
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 1% auto;
+    }
+
 
 }
+
+
+
