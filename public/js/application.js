@@ -64,7 +64,7 @@ $(document).ready(function() {
     $.ajax({
       url: $(e.target).attr('href')
     }).done(function(response){
-      $('.body').html(response)
+      $('.workout').attr('src', response)
     })
   })
 
