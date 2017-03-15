@@ -210,9 +210,8 @@ a.submit {
 }
 
 .workout_show {
-  max-width: 100%;
-  height: auto;
-  width: auto\9; /* ie8 */
+  width: auto;
+  max-height: 600px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -620,6 +619,24 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
     h2 {
       font-size: 27px;
+    }
+
+    a.submit {
+      padding: 3% 1%;
+      width: 30%;
+      font-size: 25px;
+    }
+
+    .workout_show {
+      width: 400px;
+      height: 540px;
+      width: auto\9; /* ie8 */
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 1% auto;
     }
 
 
