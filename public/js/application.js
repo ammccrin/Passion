@@ -92,6 +92,15 @@ $(document).ready(function() {
   })
 
 
+   $('.container').on('click', 'img.workout', function(e){
+    e.preventDefault()
+
+    $('#lightbox').fadeIn()
+    $(e.target).removeClass('workout')
+    $(e.target).addClass('workout_show')
+  })
+
+
    $('.container').on('click', '.workout_show', function(e){
     e.preventDefault()
 
