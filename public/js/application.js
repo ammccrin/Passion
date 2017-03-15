@@ -92,6 +92,15 @@ $(document).ready(function() {
   })
 
 
+   $('.container').on('click', 'img.workout', function(e){
+    e.preventDefault()
+
+    $('#lightbox').fadeIn()
+    $(e.target).removeClass('workout')
+    $(e.target).addClass('workout_show')
+  })
+
+
    $('.container').on('click', '.workout_show', function(e){
     e.preventDefault()
 
@@ -138,7 +147,7 @@ $(document).ready(function() {
 
       var countdown = time * 60 * 1000;
       var timerId = setInterval(function(){
-        countdown -= 10000;
+        countdown -= 1000;
         var min = Math.floor(countdown / (60 * 1000));
         //var sec = Math.floor(countdown - (min * 60 * 1000));  // wrong
         var sec = Math.floor((countdown - (min * 60 * 1000)) / 1000);  //correct
