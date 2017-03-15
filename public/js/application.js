@@ -83,30 +83,13 @@ $(document).ready(function() {
 
 
 
+   // Lightbox interactions
    $('.container').on('click', '.workout_list', function(e){
     e.preventDefault()
 
     $('#lightbox').fadeIn()
     $(e.target).removeClass('workout_list')
     $(e.target).addClass('workout_show')
-  })
-
-
-   $('.container').on('click', 'img.workout', function(e){
-    e.preventDefault()
-
-    $('#lightbox').fadeIn()
-    $(e.target).removeClass('workout')
-    $(e.target).addClass('workout_show')
-  })
-
-
-   $('.container').on('click', '.workout_show', function(e){
-    e.preventDefault()
-
-    $('#lightbox').fadeOut()
-    $(e.target).removeClass('workout_show')
-    $(e.target).addClass('workout_list')
   })
 
    $('.container').on('click', '#lightbox', function(e){
@@ -116,6 +99,41 @@ $(document).ready(function() {
     $('.workout_show').addClass('workout_list')
     $('.workout_list').removeClass('workout_show')
   })
+
+   $('.container').on('click', '.workout_show', function(e){
+    e.preventDefault()
+
+    $('#lightbox').fadeOut()
+    $(e.target).addClass('workout_list')
+    $(e.target).removeClass('workout_show')
+  })
+
+   $('.container').on('click', '.workout', function(e){
+    e.preventDefault()
+
+    $('#lightbox_one').fadeIn()
+    $(e.target).removeClass('workout')
+    $(e.target).addClass('workout_show_one')
+  })
+
+   $('.container').on('click', '#lightbox_one', function(e){
+    e.preventDefault()
+
+    $('#lightbox_one').fadeOut()
+    $('.workout_show_one').addClass('workout')
+    $('.workout_show_one').removeClass('workout_show_one')
+  })
+
+
+   $('.container').on('click', '.workout_show_one', function(e){
+    e.preventDefault()
+
+    $('#lightbox_one').fadeOut()
+    $(e.target).addClass('workout')
+    $(e.target).removeClass('workout_show_one')
+  })
+
+
 
 
    // Changing the users time for countdown
@@ -147,7 +165,7 @@ $(document).ready(function() {
 
       var countdown = time * 60 * 1000;
       var timerId = setInterval(function(){
-        countdown -= 1000;
+        countdown -= 10000;
         var min = Math.floor(countdown / (60 * 1000));
         //var sec = Math.floor(countdown - (min * 60 * 1000));  // wrong
         var sec = Math.floor((countdown - (min * 60 * 1000)) / 1000);  //correct
